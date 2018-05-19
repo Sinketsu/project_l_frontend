@@ -45,7 +45,7 @@
                             <h3 class="my-1 text-center">Sign-In</h3>
                         </div>
                         <div class="card-body">
-                            <form action="/sign-in" method="post" class="form" role="form" autocomplete="off"
+                            <form action="/sign-in" method="post" class="form" role="form"
                                   id="formLogin">
                                 {% csrf_token %}
                                 <div class="form-group">
@@ -55,7 +55,7 @@
                                 <div class="form-group">
                                     <label for="password">Password</label>
                                     <input type="password" class="form-control" name="password" id="password"
-                                           autocomplete="new-password" required>
+                                           autocomplete="off" required>
                                 </div>
                                 <button type="submit" class="btn btn-custom btn-lg btn-block mt-4">Submit</button>
                             </form>
