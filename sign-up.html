@@ -46,6 +46,7 @@
               </div>
               <div class="card-body">
                 <form  action="/sign-up" method="post" class="form" role="form" autocomplete="off" id="formLogin">
+                  {% csrf_token %}
                   <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text" class="form-control" name="username" id="username" required>
