@@ -1,0 +1,127 @@
+body, html {
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container{
+  padding-right: -10px;
+}
+.navbar-custom {
+  background-color: #c196fa;
+}
+
+.btn-custom {
+  background-color: #c196fa;
+  color: #ffffff;
+}
+
+.btn-red {
+  background-color: #f70655;
+  color: #ffffff;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.btn-yellow {
+  border-color: #fff58f;
+  border-width: 2px;
+  color: #fff58f;
+}
+
+.btn-yellow:hover {
+  background-color: #fff58f;
+  color: #6930a2 !important;
+}
+
+.btn-yellow, .btn-red, .btn-custon{
+  border-radius: .3rem;
+}
+
+.round-angles {
+  border-radius: .5rem;
+}
+
+.textlanding {
+  font-size: xx-large;
+  font-weight: 450;
+}
+
+.cropped-top{
+  margin-top : -90px;
+}
+
+.cropped-bot{
+  margin-bottom : -30px;
+}
+
+.cropped-top, .cropped-bot {
+  overflow: hidden !important;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.lizardcollage{
+
+}
+
+.btn-green {
+  border-color: #6aac2b;
+  border-width: 2px;
+  color: #6aac2b;
+}
+
+.btn-green:hover {
+  background-color: #6aac2b;
+  color: #e9cbd0 !important;
+}
+
+.image-container {
+  max-height:100px;
+  overflow:hidden !important;
+}
+
+.project-description {
+  font-size: large;
+}
+
+.textgreen {
+  color: #749b40;
+}
+
+.btn-green-2 {
+  border-color: #348539;
+  border-width: 2px;
+  color: #348539;
+}
+
+.btn-green-2:hover {
+  background-color: #348539;
+  color: #d9a8c7 !important;
+}
+
+/*чистый копипаст*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #c196fa; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  color: #fff58f;
+}

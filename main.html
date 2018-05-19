@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Project L®</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
+  <link rel="icon" href="{% static 'img/logo.png' %}">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/totop.js' %}"></script>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">
+    <span class="fa fa-chevron-up"></span>
+  </button>
+  <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+    <a href="/" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt="" style="width:35px;"> Project L</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pl-5" id="collapsibleNavbar">
+      <div class="pl-4 ml-auto">
+        <a href="#" class="btn navbar-btn btn-yellow" style="color: #fff58f">Play Now</a>
+      </div>
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/sign-up">Sign-Up</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/sign-in">Sign-In</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/about-us">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mw-100">
+    <div class="row">
+      <div class="col-md-5 ml-0 my-auto text-center">
+        <h1 class="display-2">Project L</h1>
+        <h2 class="display-4">Select. Collect</h2>
+        <h4 class="text-muted pt-3 mb-4">The cuttiest lizards ever!</h4>
+        <div class="">
+          <a href="#" class="btn navbar-btn btn-lg btn-green" style="color: #6aac2b">Start collecting now!</a>
+        </div>
+      </div>
+
+      <div class="col-md-7 lizardcollage mx-auto">
+        <div class="row">
+          <div class="col">
+            <img src="{% static 'img/1.svg' %}" class="img-responsive mt-5">
+            <img src="{% static 'img/2.svg' %}" class="img-responsive">
+            <img src="{% static 'img/3.svg' %}" class="img-responsive">
+          </div>
+          <div class="col">
+            <img src="{% static 'img/4.svg' %}" class="img-responsive">
+            <img src="{% static 'img/5.svg' %}" class="img-responsive">
+            <img src="{% static 'img/6.svg' %}" class="img-responsive">
+            <img src="{% static 'img/7.svg' %}" class="img-responsive">
+          </div>
+          <div class="col">
+            <img src="{% static 'img/8.svg' %}" class="img-responsive mt-5">
+            <img src="{% static 'img/9.svg' %}" class="img-responsive">
+            <img src="{% static 'img/10.svg' %}" class="img-responsive">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-md-2 ml-5 py-5">
+        <img src="{% static 'img/logo.png' %}" alt="Project L logo" class="img-responsive">
+      </div>
+      <div class="col-md-8 ml-auto text-center my-auto">
+        <h1 class="display-5">What is Project L?</h1>
+        <p class="project-description">Project <b>L</b> is a <b>L</b>izard World, where you can have your favourite pet.
+          Many of them! Here you can try to get rare species by breeding lizards, or just bying them.
+          In return, these cutties will bring you wealth, if someone wants your pet with noble genes to be parent!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-9 offset-md-2 text-center my-auto">
+        <h1>Always dreamed to see life developing?</h1>
+        <h3> Want to be in <b class="textgreen">Unique</b> community that creates <b class="textgreen">Unique</b> lizards?</h3>
+        <h1>What are you waiting for?</h1>
+        <div class="">
+          <a href="#" class="btn navbar-btn btn-lg btn-green-2 mt-2" style="color: #348539">Start collecting now!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
