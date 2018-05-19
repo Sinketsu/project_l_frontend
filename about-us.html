@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Project L® Sign-In</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/about-us.css' %}" type="text/css">
+  <link rel="icon" href="{% static 'img/logo.png' %}">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+    <a href="/" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt="" style="width:35px;"> Project L</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <div class="ml-auto">
+        <a href="#" class="btn navbar-btn btn-yellow" style="color: #fff58f">Play Now</a>
+      </div>
+      <ul class="navbar-nav ml-md-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/sign-up">Sign-Up</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/sign-in">Sign In</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1">OUR TEAM</h5>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'img/SKostya.jpg' %}" alt="card image"></p>
+                                    <h4 class="card-title">Константин Слепов</h4>
+                                    <p class="card-text">Руководитель команды. Backend. Frontend.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Константин Слепов</h4>
+                                    <p class="card-text">Here you can find my achievements. But I haven't written them yet. :)</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://vk.com/slep0v">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/slep0v">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'img/ORoma.jpg' %}" alt="card image"></p>
+                                    <h4 class="card-title">Роман Опякин</h4>
+                                    <p class="card-text">Главный инженер проекта. Backend. Frontend.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Роман Опякин</h4>
+                                    <p class="card-text">Here you can find my achievements. But I haven't written them yet. :)</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://vk.com/id445043888">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://github.com/Sinketsu">
+                                                <i class="fa fa-github"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="img/{% static 'img/MAnya.jpg' %}" alt="card image"></p>
+                                    <h4 class="card-title">Анна Морозова</h4>
+                                    <p class="card-text">Дизайнер проекта.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Анна Морозова</h4>
+                                    <p class="card-text">Here you can find my achievements. But I haven't written them yet. :)</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://vk.com/id71064668">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'img/KAnya.jpg' %}" alt="card image"></p>
+                                    <h4 class="card-title">Анна Крутолапова</h4>
+                                    <p class="card-text">Разработка генетических алгоритмов.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Анна Крутолапова</h4>
+                                    <p class="card-text">Here you can find my achievements. But I haven't written them yet. :)</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://vk.com/id146806953">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'img/RMariam.jpg' %}" alt="card image"></p>
+                                    <h4 class="card-title">Мариам Рстакян</h4>
+                                    <p class="card-text">Разработка генетических алгоритмов.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Мариам Рстакян</h4>
+                                    <p class="card-text">Here you can find my achievements. But I haven't written them yet. :)</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://vk.com/mariiamka">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="{% static 'img/KNastya.jpg' %}" alt="card image"></p>
+                                    <h4 class="card-title">Анастасия Колмакова</h4>
+                                    <p class="card-text">Создание эскизов для Frontend разработки.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Анастасия Колмакова</h4>
+                                    <p class="card-text">Here you can find my achievements. But I haven't written them yet. :)</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://vk.com/id64686575">
+                                                <i class="fa fa-vk"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+
+        </div>
+    </div>
+</section>
+</body>
+</html>
