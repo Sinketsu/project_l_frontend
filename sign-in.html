@@ -16,21 +16,31 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
-    <a href="/" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt="" width="35px"> Project L</a>
+    <a href="/" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt="" style="width:35px;"> Project L</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <div class="ml-auto">
-            <a href="#" class="btn navbar-btn btn-yellow" style="color: #fff58f">Play Now</a>
+    <div class="collapse navbar-collapse pl-5" id="collapsibleNavbar">
+        <div class="text-center mx-auto">
+            <a href="/about-us" class="text-white mx-2" style="text-decoration: none">About Us</a>
+            <a href="#" class="text-white mx-2" style="text-decoration: none">Marketplace</a>
         </div>
-        <ul class="navbar-nav ml-md-auto">
+        <ul class="navbar-nav">
+            {% if authenticated %}
             <li class="nav-item active">
-                <a class="nav-link" href="/sign-up">Sign-Up</a>
+                <a class="nav-link" href="/my-lizards">My lizards</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="/about-us">About Us</a>
+                <a class="nav-link" href="/logout">Log Out</a>
             </li>
+            {% else %}
+            <li class="nav-item active">
+                <a class="nav-link" href="/sign-in">Sign In</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/sign-up">Sign Up</a>
+            </li>
+            {% endif %}
         </ul>
     </div>
 </nav>
