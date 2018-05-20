@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-custom {
+    background-color: #c196fa;
+}
+
+.btn-custom {
+    background-color: #c196fa;
+    color: #ffffff;
+}
+
+.btn-custom:hover {
+    background-color: #c196fa;
+    color: #ffffff;
+}

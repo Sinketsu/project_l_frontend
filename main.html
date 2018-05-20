@@ -25,19 +25,26 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse pl-5" id="collapsibleNavbar">
-      <div class="pl-4 ml-auto">
-        <a href="#" class="btn navbar-btn btn-yellow" style="color: #fff58f">Play Now</a>
+      <div class="text-center mx-auto">
+        <a href="/about-us" class="text-white mx-2" style="text-decoration: none">About Us</a>
+        <a href="#" class="text-white mx-2" style="text-decoration: none">Marketplace</a>
       </div>
-      <ul class="navbar-nav ml-md-auto">
+      <ul class="navbar-nav">
+        {% if authenticated %}
         <li class="nav-item active">
-          <a class="nav-link" href="/sign-up">Sign-Up</a>
+          <a class="nav-link" href="/my-lizards">My lizards</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/sign-in">Sign-In</a>
+          <a class="nav-link" href="/logout">Log Out</a>
+        </li>
+        {% else %}
+        <li class="nav-item active">
+          <a class="nav-link" href="/sign-in">Sign In</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/about-us">About Us</a>
+          <a class="nav-link" href="/sign-up">Sign Up</a>
         </li>
+        {% endif %}
       </ul>
     </div>
   </nav>
@@ -45,7 +52,7 @@
     <div class="row">
       <div class="col-md-5 ml-0 my-auto text-center">
         <h1 class="display-2">Project L</h1>
-        <h2 class="display-4">Select. Collect</h2>
+        <h2 class="display-4">Select. Collect. Breed.</h2>
         <h4 class="text-muted pt-3 mb-4">The cuttiest lizards ever!</h4>
         <div class="">
           <a href="#" class="btn navbar-btn btn-lg btn-green" style="color: #6aac2b">Start collecting now!</a>
