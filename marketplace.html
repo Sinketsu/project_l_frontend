@@ -53,7 +53,7 @@
                 {% for lizard in lizards %}
                 <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                     <div class="card m-1 my-2">
-                        <img class="card-img-top" src="/static/img/lizards/{{ lizard.id }}.svg">
+                        <img class="card-img-top" src="/static/img/lizards/{{ lizard.id.id }}.svg">
                         <div class="card-body">
                             <h4 class="card-title">Lizard #{{ lizard.id.id }}</h4>
                             <p>Price: {{ lizard.price }}</p>
