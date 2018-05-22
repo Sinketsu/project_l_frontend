@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>Project L® Lizard #{{ lizard.id }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/lizard.css' %}" type="text/css">
+  <link rel="icon" href="{% static 'img/logo.png' %}">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+    <a href="/" class="navbar-brand"><img src="{% static 'img/logo.png' %}" alt="" style="width:35px;"> Project L</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pl-5" id="collapsibleNavbar">
+      <div class="text-center mx-auto">
+        <a href="/about-us" class="text-white mx-2" style="text-decoration: none">About Us</a>
+        <a href="/marketplace" class="text-white mx-2" style="text-decoration: none">Marketplace</a>
+      </div>
+      <ul class="navbar-nav">
+        {% if authenticated %}
+        <li class="nav-item active">
+          <a class="nav-link" href="/my-lizards">My lizards</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/logout">Log Out</a>
+        </li>
+        {% else %}
+        <li class="nav-item active">
+          <a class="nav-link" href="/sign-in">Sign In</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/sign-up">Sign Up</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row" style="background: rgba(0, 0, 0, 0.05) ! important">
+      <div class="col-md-7 text-center mx-auto">
+        <img src="/static/img/lizards/{{ lizard.id }}.svg">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-3 py-3 rounded" style="background-color: #dcc6d6">     <!--заменить mb на my, если хочешь промежуток сверху -->
+    <div class="row text-left">
+      <div class="col-md-12">
+        <h2>Lizard #{{ lizard.id }} <a href="#"><span class="badge badge-info badge-pill">Wants to breed!</span></a></h2>
+      </div>
+    </div>
+    <div class="row pb-3" style="border-bottom: 2px solid grey !important">
+      <div class="col my-auto">
+        <div class="row text-info">
+          <div class="col-md-4">
+            <h3> Rarity {{ lizard.rarity }}</h3>
+          </div>
+
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col-md-5 offset-md-6 text-right my-auto">
+              <h3> {{ lizard.owner.username }} </h3>
+              <h5 class="text-muted"> Owner </h5>
+            </div>
+        </div>
+      </div>
+    </div>
+        <div class="row my-5 pb-4 mr-auto">
+          <div class="col-md-5 my-auto">
+            <h3>Fenotype</h3>
+            <div class="table-responsive">
+            <table class="table table-striped table-active rounded table-borderless">
+              <tbody>
+                <tr>
+                  <th scope="row">Body</th>
+                  <td>Type {{ lizard.body }}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Head</th>
+                  <td>Type {{ lizard.head }}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Crest</th>
+                  <td>Type {{ lizard.tophead }}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Horns</th>
+                  <td>Type {{ lizard.horns }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+          <div class="col-md-5 offset-md-2 my-auto" >
+            <h3>About me</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+        </div>
+
+      </div>
+</body>
+</html>
