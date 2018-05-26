@@ -14,8 +14,8 @@ function mergefoo(wtbreed_id, with_id) {
         "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
         {},
         function(data) {
-            res_id = Number(data);
-            console.log(res_id);
+            window.res_id = Number(data);
+            console.log(window.res_id);
         }
     );
 
@@ -70,6 +70,6 @@ function mergefoo(wtbreed_id, with_id) {
  setTimeout(chngvis, 0.8*mergetime*1000);
 
   sleep(2000);
-  console.log(res_id);
+  console.log(window.res_id);
 
 }
