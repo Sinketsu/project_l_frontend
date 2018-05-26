@@ -52,10 +52,14 @@
     </div>
   </div>
 
-  <div class="container mb-3 py-3 rounded" style="background-color: #dcc6d6">     <!--заменить mb на my, если хочешь промежуток сверху -->
+  <div class="container mb-3 py-3 rounded" style="background-color: #dcc6d6">
     <div class="row text-left">
       <div class="col-md-12">
-        <h2>Lizard #{{ lizard.id }} <a href="#"><span class="badge badge-info badge-pill">Wants to breed!</span></a></h2>
+        <h2>Lizard #{{ lizard.id }}
+          <a href="/factory?wtbreed={{ lizard.id }}">
+            <span class="badge badge-info badge-pill">Wants to breed!</span>
+          </a>
+        </h2>
       </div>
     </div>
     <div class="row pb-3" style="border-bottom: 2px solid grey !important">
