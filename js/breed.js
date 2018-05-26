@@ -32,6 +32,9 @@ function mergefoo(wtbreed_id, with_id) {
   }, 20);
 
   function chngvis() {
+    if (res_id < 0)
+      return;
+
     liz3.style.visibility='visible';
     var timer1=setInterval(function(){
       liz3.style.opacity=$('#liz3').css("opacity")-(-0.01);
@@ -55,8 +58,6 @@ function mergefoo(wtbreed_id, with_id) {
       c[i].style.visibility='visible';
     }
   }
-
-  console.log(res_id);
 
  setTimeout(chngvis, 0.8*mergetime*1000);
 
