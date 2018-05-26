@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project L® Lizard page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/logo.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/breed.css" type="text/css">
+  <script src="js/breed.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+    <a href="https://projectl.me/" class="navbar-brand"><img src="img/logo.png" alt="" style="width:35px;"> Project L</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse pl-5" id="collapsibleNavbar">
+      <div class="text-center mx-auto">
+        <a href="https://projectl.me/about-us" class="text-white mx-2" style="text-decoration: none">About Us</a>
+        <a href="https://projectl.me/marketplace" class="text-white mx-2" style="text-decoration: none">Marketplace</a>
+      </div>
+      <ul class="navbar-nav">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="https://projectl.me/my-lizards">My lizards</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="https://projectl.me/logout">Log Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5 pb-2 pt-5" style="background-color: #dcc6d6">
+    <div class="row">
+      <div id="setw1" class="col">
+        <div id="liz1" class="fading">
+          <img class="bcg" src="img/6.svg">
+        </div>
+      </div>
+      <div id="getw" class="mx-auto" style="width: 0px">
+        <div id="liz3">
+          <img class="bcg" src="img/1.svg">
+
+        </div>
+      </div>
+      <div id="setw2" class="col">
+        <div id="liz2" class="fading" >
+          <img class="bcg" src="img/10.svg">
+        </div>
+      </div>
+    </div>
+    <div class="row my-5">
+      <div id="btnbreed" class="col-md-12 text-center">
+        <button id="mergebutton" type="button" class="btn btn-info btn-lg" onclick="mergefoo()">Breed!</button>
+      </div>
+      <div class="text-center congrats">
+        <span>
+          <h3>Lizard #228322</h3>
+        </span>
+        <span>
+          <p class="text text-muted">is successfuly breeded!<p>
+        </span>
+      </div>
+      <div class="text-center congrats">
+        <a href="#" class="btn btn-info btn-lg">View</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

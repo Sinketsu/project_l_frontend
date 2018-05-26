@@ -1,0 +1,114 @@
+body, html {
+    height: 100%;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background: #d9a7c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+.navbar-custom {
+  background-color: #c196fa;
+}
+
+.btn-custom {
+  background-color: #c196fa;
+  color: #ffffff;
+}
+
+.btn-red {
+  background-color: #f70655;
+  color: #ffffff;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.btn-yellow {
+  border-color: #fff58f;
+  border-width: 2px;
+  color: #fff58f;
+}
+
+.text-cyan {
+  color: #21afc5;
+}
+
+.btn-yellow:hover {
+  background-color: #fff58f;
+  color: #6930a2 !important;
+}
+
+.btn-yellow, .btn-red, .btn-custon{
+  border-radius: .3rem;
+}
+
+.round-angles {
+  border-radius: .5rem;
+}
+
+#liz1 {
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+
+#liz2 {
+  position: relative;
+  cursor: pointer;
+
+  z-index: 1;
+}
+
+#liz3 {
+  position: relative;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+}
+
+img {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.congrats {
+  visibility: hidden;
+}
+
+
+/* Копипаст */
+
+
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
