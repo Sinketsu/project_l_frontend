@@ -58,7 +58,7 @@
                             <h4 class="card-title">Lizard #{{ lizard.id.id }}</h4>
                             <p>Price: {{ lizard.price }}</p>
                             <a href="/lizard/{{ lizard.id.id }}" class="btn btn-primary btn-custom border-0 w-100 my-1">View</a>
-                            <a href="#" class="btn btn-success btn-green border-0 w-100">Breed</a>
+                            <a href="/breed?wtbreed={{ wtbreed }}&with={{ lizard.id.id }}" class="btn btn-success btn-green border-0 w-100">Breed</a>
                         </div>
                     </div>
                 </div>
