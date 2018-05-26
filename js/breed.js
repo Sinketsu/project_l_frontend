@@ -1,18 +1,12 @@
 function mergefoo(wtbreed_id, with_id) {
     var res_id = -1;
 
-    // $.ajax({
-    //     url: "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
-    //     success: function(response){
-    //         res_id = Number(response);
-    //     }
-    // });
-
     $.get(
         "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
         {},
         function(data) {
-            console.log(data);
+            res_id = Number(data);
+            console.log(res_id);
         }
     );
 
