@@ -7,6 +7,7 @@ function mergefoo(wtbreed_id, with_id) {
         function(data) {
             window.res_id = Number(data);
             console.log(window.res_id);
+            setTimeout(chngvis, 0.8*mergetime*1000);
         }
     );
 
@@ -57,9 +58,4 @@ function mergefoo(wtbreed_id, with_id) {
       c[i].style.visibility='visible';
     }
   }
-
- setTimeout(chngvis, 0.8*mergetime*1000);
-
-  console.log('asd = ' + window.res_id);
-
 }
