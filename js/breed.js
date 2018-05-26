@@ -5,8 +5,8 @@ function mergefoo(wtbreed_id, with_id) {
         function(data) {
             var res_id = Number(data);
             console.log(res_id);
-            res_img.src = "/static/img/lizards/" + res_id + ".svg";
-            res_label.value = "Lizard #" + res_id;
+            window.res_img.src = "/static/img/lizards/" + res_id + ".svg";
+            window.res_label.value = "Lizard #" + res_id;
             setTimeout(chngvis, 0.8*mergetime*1000);
         }
     );
