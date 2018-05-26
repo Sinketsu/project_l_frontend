@@ -1,12 +1,12 @@
-var res_id = -1;
-
 function mergefoo(wtbreed_id, with_id) {
     $.get(
         "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
         {},
         function(data) {
-            window.res_id = Number(data);
-            console.log(window.res_id);
+            var res_id = Number(data);
+            console.log(res_id);
+            res_img.src = "/static/img/lizards/" + res_id + ".svg";
+            res_label.value = "Lizard #" + res_id;
             setTimeout(chngvis, 0.8*mergetime*1000);
         }
     );
