@@ -1,4 +1,13 @@
 function mergefoo(wtbreed_id, with_id) {
+    function sleep(milliseconds) {
+        var start = new Date().getTime();
+        for (var i = 0; i < 1e7; i++) {
+            if ((new Date().getTime() - start) > milliseconds){
+                break;
+            }
+        }
+    }
+
     var res_id = -1;
 
     $.get(
@@ -32,8 +41,7 @@ function mergefoo(wtbreed_id, with_id) {
   }, 20);
 
   function chngvis() {
-    if (res_id < 0)
-      return;
+
 
     liz3.style.visibility='visible';
     var timer1=setInterval(function(){
@@ -60,5 +68,8 @@ function mergefoo(wtbreed_id, with_id) {
   }
 
  setTimeout(chngvis, 0.8*mergetime*1000);
+
+  sleep(2000);
+  console.log(res_id);
 
 }
