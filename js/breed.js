@@ -1,4 +1,13 @@
-function mergefoo() {
+function mergefoo(wtbreed_id, with_id) {
+    var res_id = -1;
+
+    $.ajax({
+        url: "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
+        success: function(response){
+            res_id = Number(response)
+        }
+    });
+
   mergebutton.style.visibility='hidden';
   var b= document.getElementsByClassName("bcg");
   for (var i = 0; i < b.length; i+=2) {
@@ -44,6 +53,9 @@ function mergefoo() {
       c[i].style.visibility='visible';
     }
   }
+
+  while (res_id < 0);
+
  setTimeout(chngvis, 0.8*mergetime*1000);
 
 }
