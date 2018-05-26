@@ -1,15 +1,6 @@
 var res_id = -1;
 
 function mergefoo(wtbreed_id, with_id) {
-    function sleep(milliseconds) {
-        var start = new Date().getTime();
-        for (var i = 0; i < 1e7; i++) {
-            if ((new Date().getTime() - start) > milliseconds){
-                break;
-            }
-        }
-    }
-
     $.get(
         "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
         {},
@@ -69,7 +60,6 @@ function mergefoo(wtbreed_id, with_id) {
 
  setTimeout(chngvis, 0.8*mergetime*1000);
 
-  sleep(2000);
-  console.log(window.res_id);
+  console.log('asd = ' + window.res_id);
 
 }
