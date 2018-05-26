@@ -1,12 +1,20 @@
 function mergefoo(wtbreed_id, with_id) {
     var res_id = -1;
 
-    $.ajax({
-        url: "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
-        success: function(response){
-            res_id = Number(response)
+    // $.ajax({
+    //     url: "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
+    //     success: function(response){
+    //         res_id = Number(response);
+    //     }
+    // });
+
+    $.get(
+        "/want_to_breed?wtbreed=" + wtbreed_id + "&with=" + with_id,
+        {},
+        function(data) {
+            console.log(data);
         }
-    });
+    );
 
   mergebutton.style.visibility='hidden';
   var b= document.getElementsByClassName("bcg");
@@ -54,7 +62,7 @@ function mergefoo(wtbreed_id, with_id) {
     }
   }
 
-  while (res_id < 0);
+  // while (res_id < 0);
 
  setTimeout(chngvis, 0.8*mergetime*1000);
 
