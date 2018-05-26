@@ -7,6 +7,7 @@ function mergefoo(wtbreed_id, with_id) {
             console.log(res_id);
             window.res_img.src = "/static/img/lizards/" + res_id + ".svg";
             window.res_label.textContent = "Lizard #" + res_id;
+            window.res_link.href = "/lizard/" + res_id;
             setTimeout(chngvis, 0.8*mergetime*1000);
         }
     );
